@@ -1,5 +1,7 @@
 class Element(object):
-    pass
+
+    def next_generation(self):
+        pass
 
 
 class Branch(Element):
@@ -7,8 +9,8 @@ class Branch(Element):
     def __init__(self):
         self.length = 1
 
-    @staticmethod
-    def next_generation():
+    def next_generation(self):
+        # if available
         return [Branch(), Swerve(90), Branch(), Swerve(-90), Branch(), Swerve(-90),
                 Branch(), Swerve(90), Branch()]
 
@@ -32,15 +34,9 @@ class KochCurve(object):
     root = [Swerve(90), Branch()]
     trees = root
 
-    def __init__(self, depth):
+    def __init__(self):
         self.branch = Branch
-        self.depth = depth
         self.l_str = self.axoim
-
-    def get_l_str(self):
-        for i in range(1, self.depth):
-            self.l_str = self.l_str.replace('F', 'F+F-F-F+F')
-        return self.l_str
 
     def next(self):
         temp = []
@@ -51,7 +47,7 @@ class KochCurve(object):
 
 
 if __name__ == '__main__':
-    t = KochCurve(2)
+    t = KochCurve()
     t.next()
     print(len(t.trees))
     t.next()
