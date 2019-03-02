@@ -41,14 +41,11 @@ class KochCurve(object):
     # axoim -F
     # angle 90
 
-    axoim = '-F'
-
     root = [Branch(angle=90, father=None)]
     trees = root
 
     def __init__(self):
         self.branch = Branch
-        self.l_str = self.axoim
 
     def next(self):
         temp = []
