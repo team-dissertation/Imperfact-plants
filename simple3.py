@@ -13,7 +13,8 @@
 
 # depth 3
 # angle 22.5
-from enum import Enum
+
+import math
 
 
 class Element(object):
@@ -24,8 +25,10 @@ class Element(object):
 
 class Branch(Element):
 
-    def __init__(self):
-        self.length = 1
+    length = 1
+
+    def __init__(self, father):
+        pass
 
     def next_generation(self):
         # available = 2==2

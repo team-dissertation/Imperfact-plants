@@ -8,32 +8,31 @@ class Element(object):
 
 
 class Branch(Element):
+    x = 150
+    y = 150
 
-    def __init__(self, angle: int, father):
-        self.length = 1
-        if angle is None:
-            raise Exception('angle can not be None')
+    def __init__(self, angle):
+        self.length = 10
         self.angle = angle
-        if father is None:
-            self.x = 0
-            self.y = 0
-        else:
-            self.father = father
+
+    def make(self, father):
+        if father:
             self.x = father.end_x
             self.y = father.end_y
-        self.end_x = self.x + self.length * math.cos(self.angle)
-        self.end_y = self.y + self.length * math.sin(self.angle)
 
-    def next_generation(self, available):
-        if not available:
-            return []
-        b1 = Branch(father=self, angle=self.angle)
-        b2 = Branch(father=b1, angle=b1.angle + 90)
-        b3 = Branch(father=b2, angle=b2.angle - 90)
-        b4 = Branch(father=b3, angle=b3.angle - 90)
-        b5 = Branch(father=b4, angle=b4.angle + 90)
-
-        return [b1, b2, b3, b4, b5]
+        self.angle = self.angle % 360
+        if self.angle == 90:
+            self.end_x = self.x
+            self.end_y = self.y + self.length
+        elif self.angle == 180:
+            self.end_x = self.x + self.length
+            self.end_y = self.y
+        elif self.angle == 270:
+            self.end_x = self.x
+            self.end_y = self.y - self.length
+        else:
+            self.end_x = self.x - self.length
+            self.end_y = self.y
 
 
 class KochCurve(object):
@@ -41,22 +40,37 @@ class KochCurve(object):
     # axoim -F
     # angle 90
 
-    root = [Branch(angle=90, father=None)]
-    trees = root
+    grammar = 'F=F+F-F-F+F'
+    axoim = '-F'
+    angle = 90
 
     def __init__(self):
-        self.branch = Branch
+        self.treestr = self.axoim
 
     def next(self):
+        self.treestr = self.treestr.replace('F', 'F+F-F-F+F')
+        self.make()
+
+    def make(self):
         temp = []
-        for i in self.trees:
-            temp.extend(i.next_generation(True))
+        for item in self.treestr:
+            if item == '-':
+                self.angle -= 90
+            elif item == '+':
+                self.angle += 90
+            else:
+                temp.append(Branch(self.angle))
+        for index, item in enumerate(temp):
+            if index == 0:
+                item.make(father=None)
+            else:
+                item.make(father=temp[index - 1])
         self.trees = temp
-        return self.trees
 
 
 if __name__ == '__main__':
     t = KochCurve()
+    t.make()
     t.next()
     print(len(t.trees))
     t.next()
