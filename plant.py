@@ -21,6 +21,7 @@ class Branch(Element):
             self.y = father.end_y
 
         self.angle = self.angle % 360
+        '''Keep for debug'''
         if self.angle == 90:
             self.end_x = self.x
             self.end_y = self.y + self.length
@@ -33,6 +34,8 @@ class Branch(Element):
         else:
             self.end_x = self.x - self.length
             self.end_y = self.y
+        #self.end_x = self.x + self.length * math.cos(math.pi / (self.angle / 180))
+        #self.end_y = self.y + self.length * math.sin(math.pi / (self.angle / 180))
 
 
 class KochCurve(object):
