@@ -8,8 +8,8 @@ class Element(object):
 
 
 class Branch(Element):
-    x = 150
-    y = 150
+    x = 250
+    y = 250
 
     def __init__(self, angle):
         self.length = 10
@@ -22,20 +22,20 @@ class Branch(Element):
 
         self.angle = self.angle % 360
         '''Keep for debug'''
-        if self.angle == 90:
-            self.end_x = self.x
-            self.end_y = self.y + self.length
-        elif self.angle == 180:
-            self.end_x = self.x + self.length
-            self.end_y = self.y
-        elif self.angle == 270:
-            self.end_x = self.x
-            self.end_y = self.y - self.length
-        else:
-            self.end_x = self.x - self.length
-            self.end_y = self.y
-        #self.end_x = self.x + self.length * math.cos(math.pi / (self.angle / 180))
-        #self.end_y = self.y + self.length * math.sin(math.pi / (self.angle / 180))
+        # if self.angle == 90:
+        #     self.end_x = self.x
+        #     self.end_y = self.y + self.length
+        # elif self.angle == 180:
+        #     self.end_x = self.x + self.length
+        #     self.end_y = self.y
+        # elif self.angle == 270:
+        #     self.end_x = self.x
+        #     self.end_y = self.y - self.length
+        # else:
+        #     self.end_x = self.x - self.length
+        #     self.end_y = self.y
+        self.end_x = self.x + self.length * math.cos(math.pi * (self.angle / 180))
+        self.end_y = self.y + self.length * math.sin(math.pi * (self.angle / 180))
 
 
 class KochCurve(object):
