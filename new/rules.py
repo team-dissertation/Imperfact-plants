@@ -29,6 +29,7 @@ class Tree(object):
     rules = {}
     axiom = ''
     color = [Color(0, 0, 0)]
+    angle = 90
 
 
 class KochCurve(Tree):
@@ -37,6 +38,7 @@ class KochCurve(Tree):
         self.axiom = '-F'
         self.rules = {'F': 'F+F-F-F+F'}
         self.variables = ['F']
+        self.angle = 90
 
 
 class KevTrees(Tree):
@@ -45,6 +47,7 @@ class KevTrees(Tree):
         self.axiom = 'F'
         self.rules = {'F': 'C0FF-[C1-F+F+F]+[C2+F-F-F]'}
         self.variables = ['F']
+        self.angle = 90
 
 
 class KevsWispyTree(Tree):
@@ -52,5 +55,6 @@ class KevsWispyTree(Tree):
     def __init__(self):
         self.axiom = 'FX'
         self.rules = {'F': 'C0FF-[C1-F+F]+[C2+F-F]', 'X': 'C0FF+[C1+F]+[C3-F]'}
-        self.variables = ['F', 'X', 'C', '0', '1', '2', '3']
+        self.variables = ['F', 'X']
+        self.angle = 25
         self.color = [Color(140, 80, 60), Color(24, 180, 24), Color(48, 220, 48), Color(64, 255, 64)]
