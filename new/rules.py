@@ -47,7 +47,7 @@ class KevTrees(Tree):
         self.axiom = 'F'
         self.rules = {'F': 'C0FF-[C1-F+F+F]+[C2+F-F-F]'}
         self.variables = ['F']
-        self.angle = 90
+        self.angle = 22
 
 
 class KevsWispyTree(Tree):
@@ -57,4 +57,14 @@ class KevsWispyTree(Tree):
         self.rules = {'F': 'C0FF-[C1-F+F]+[C2+F-F]', 'X': 'C0FF+[C1+F]+[C3-F]'}
         self.variables = ['F', 'X']
         self.angle = 25
+        self.color = [Color(140, 80, 60), Color(24, 180, 24), Color(48, 220, 48), Color(64, 255, 64)]
+
+
+class FractalPlant(Tree):
+
+    def __init__(self):
+        self.axiom = 'X'
+        self.rules = {'F': 'FF', 'X': 'F+[[X]-X]-F[-FX]+X'}
+        self.variables = ['F', 'X']
+        self.angle = 22.5
         self.color = [Color(140, 80, 60), Color(24, 180, 24), Color(48, 220, 48), Color(64, 255, 64)]

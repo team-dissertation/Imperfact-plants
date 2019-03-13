@@ -37,10 +37,11 @@ class Branch(Element):
 class Paint(object):
 
     tree_string = ''
-    angle = 180
+    angle = 270
     branch = []
     save_point = []
-    start_point = Point(150, 150)
+    save_angle = []
+    start_point = Point(350, 950)
     save = False
     length = 10
 
@@ -59,6 +60,9 @@ class Paint(object):
             else:
                 temp_string += item
         self.tree_string = temp_string
+        self.start_point = Point(350, 950)
+        self.angle = 270
+        print(self.tree_string)
         self.make()
 
     def make(self):
@@ -80,9 +84,12 @@ class Paint(object):
 
             if item == '[':
                 self.save_point.append(Point(self.start_point.x, self.start_point.y))
+                self.save_angle.append(self.angle)
             if item == ']':
                 p = self.save_point.pop()
                 self.start_point = p
+                angle = self.save_angle.pop()
+                self.angle = angle
 
         self.branch = temp
 

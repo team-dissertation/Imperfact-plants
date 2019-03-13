@@ -8,14 +8,16 @@ from new.rules import *
 
 
 class Example(QWidget):
+
     def __init__(self):
         super().__init__()
-        self.setGeometry(0, 0, 500, 500)
+        self.setGeometry(0, 0, 1000, 1000)
 
     def paintEvent(self, event):
 
-        tree_paint = Paint(KevsWispyTree())
+        tree_paint = Paint(FractalPlant())
 
+        tree_paint.next_generation()
         tree_paint.next_generation()
         tree_paint.next_generation()
         tree_paint.next_generation()
