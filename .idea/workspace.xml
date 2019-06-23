@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eab5202-2c7f-49f5-929f-672a937515e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ddd/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd/painter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/plant.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/plant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new/rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/rules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/ddd/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd/painter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ddd/painter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +19,7 @@
     <SUITE FILE_PATH="coverage/Imperfact_plants$application.coverage" NAME="application Coverage Results" MODIFIED="1556741589731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/new" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$model__1_.coverage" NAME="model (1) Coverage Results" MODIFIED="1561311925195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ddd" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$model.coverage" NAME="model Coverage Results" MODIFIED="1561302620936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3d" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$example.coverage" NAME="example Coverage Results" MODIFIED="1561315896461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ddd" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$painter.coverage" NAME="painter Coverage Results" MODIFIED="1561314975501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ddd" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1551893531200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561303113422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3d" />
@@ -49,25 +46,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="28" />
+          <entry key="py" value="30" />
           <entry key="testtttt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="28" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="133" />
-          <entry key="py" value="10032" />
+          <entry key="py" value="10161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10165" />
+          <entry key="Python" value="10294" />
         </counts>
       </usages-collector>
     </session>
@@ -77,25 +74,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ddd/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state relative-caret-position="288">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ddd/painter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1143">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="23" />
+              <folding>
+                <marker date="1561315647388" expanded="true" signature="61:62" ph="..." />
+                <marker date="1561315647388" expanded="true" signature="61:67" ph="..." />
+                <marker date="1561315647388" expanded="true" signature="222:228" ph="..." />
+                <marker date="1561315647388" expanded="true" signature="701:707" ph="..." />
+                <marker date="1561315647388" expanded="true" signature="3309:3310" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ddd/painter.py">
+        <entry file="file://$PROJECT_DIR$/ddd/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <marker date="1561315008402" expanded="true" signature="61:62" ph="..." />
-                <marker date="1561315008402" expanded="true" signature="61:67" ph="..." />
-                <marker date="1561315008402" expanded="true" signature="222:228" ph="..." />
-                <marker date="1561315008402" expanded="true" signature="701:707" ph="..." />
-                <marker date="1561315008402" expanded="true" signature="3309:3310" ph="..." />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -142,6 +147,7 @@
         <option value="$PROJECT_DIR$/ddd/matrix.py" />
         <option value="$PROJECT_DIR$/ddd/model.py" />
         <option value="$PROJECT_DIR$/ddd/painter.py" />
+        <option value="$PROJECT_DIR$/ddd/example.py" />
       </list>
     </option>
   </component>
@@ -214,8 +220,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.painter">
-    <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.example">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,12 +229,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/new" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ddd" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new/application.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ddd/example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -326,19 +332,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.application" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.model" />
       <item itemvalue="Python.painter" />
       <item itemvalue="Python.model (1)" />
+      <item itemvalue="Python.example" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example" />
         <item itemvalue="Python.painter" />
         <item itemvalue="Python.model (1)" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.model" />
-        <item itemvalue="Python.application" />
       </list>
     </recent_temporary>
   </component>
@@ -364,8 +370,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32674298" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39854318" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32674298" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39854318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -514,9 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ddd/matrix.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ddd/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -541,23 +544,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ddd/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="288">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ddd/painter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+        <state relative-caret-position="-1143">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1561315008402" expanded="true" signature="61:62" ph="..." />
-            <marker date="1561315008402" expanded="true" signature="61:67" ph="..." />
-            <marker date="1561315008402" expanded="true" signature="222:228" ph="..." />
-            <marker date="1561315008402" expanded="true" signature="701:707" ph="..." />
-            <marker date="1561315008402" expanded="true" signature="3309:3310" ph="..." />
+            <marker date="1561315647388" expanded="true" signature="61:62" ph="..." />
+            <marker date="1561315647388" expanded="true" signature="61:67" ph="..." />
+            <marker date="1561315647388" expanded="true" signature="222:228" ph="..." />
+            <marker date="1561315647388" expanded="true" signature="701:707" ph="..." />
+            <marker date="1561315647388" expanded="true" signature="3309:3310" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/matrix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

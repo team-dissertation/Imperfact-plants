@@ -109,8 +109,3 @@ def get_matrix(m_type, x):
         raise RuntimeError('matrix type error')
 
 
-tree = BushLike()
-paint = Painter(tree)
-paint.next_generation()
-paint.next_generation()
-branches = paint.build_tree_set()
