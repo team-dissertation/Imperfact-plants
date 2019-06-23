@@ -12,6 +12,9 @@ C -- means need to change color
 1 -- color r: 24  g: 180 b: 24
 2 -- color r: 48  g: 220 b: 48
 3 -- color r: 64  g: 255 b: 64
+
+F + - [ ] X & ^ / \
+
 '''
 
 
@@ -24,7 +27,6 @@ class Color(object):
 
 
 class Tree(object):
-
     variables = []
     rules = {}
     axiom = ''
@@ -68,3 +70,12 @@ class FractalPlant(Tree):
         self.variables = ['F', 'X']
         self.angle = 22.5
         self.color = [Color(140, 80, 60), Color(24, 180, 24), Color(48, 220, 48), Color(64, 255, 64)]
+
+
+class FractalBinaryTree(Tree):
+
+    def __init__(self):
+        self.axiom = 'X'
+        self.rules = {'F': 'FF', 'X': 'F[-X]+X'}
+        self.variables = ['F', 'X']
+        self.angle = 45

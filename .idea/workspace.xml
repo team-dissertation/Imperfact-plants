@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eab5202-2c7f-49f5-929f-672a937515e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ddd/matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd/painter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new/plant.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/plant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new/rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/new/rules.py" afterDir="false" />
@@ -13,10 +17,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Imperfact_plants$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1551893531200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$rules.coverage" NAME="rules Coverage Results" MODIFIED="1552399119201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$testttt.coverage" NAME="testttt Coverage Results" MODIFIED="1553700998699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$simple3.coverage" NAME="simple3 Coverage Results" MODIFIED="1551539041471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Imperfact_plants$application.coverage" NAME="application Coverage Results" MODIFIED="1552494294271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/new" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$application.coverage" NAME="application Coverage Results" MODIFIED="1556741589731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/new" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$model__1_.coverage" NAME="model (1) Coverage Results" MODIFIED="1561311925195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ddd" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$model.coverage" NAME="model Coverage Results" MODIFIED="1561302620936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3d" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$painter.coverage" NAME="painter Coverage Results" MODIFIED="1561314975501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ddd" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1551893531200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Imperfact_plants$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561303113422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3d" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$test.coverage" NAME="test Coverage Results" MODIFIED="1551961280895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$plant__1_.coverage" NAME="plant (1) Coverage Results" MODIFIED="1552399732119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/new" />
     <SUITE FILE_PATH="coverage/Imperfact_plants$plant.coverage" NAME="plant Coverage Results" MODIFIED="1551892019385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -26,32 +35,39 @@
     <session id="1166741492">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.5" value="8" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="12" />
+          <entry key="py" value="28" />
+          <entry key="testtttt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="12" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7888" />
+          <entry key="Python Console" value="133" />
+          <entry key="py" value="10032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="7888" />
+          <entry key="Python" value="10165" />
         </counts>
       </usages-collector>
     </session>
@@ -59,40 +75,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/rules.py">
+        <entry file="file://$PROJECT_DIR$/ddd/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="18" />
-              <folding>
-                <marker date="1552491760255" expanded="true" signature="298:419" ph="..." />
-                <marker date="1552491760255" expanded="true" signature="557:704" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/plant.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1552494271357" expanded="true" signature="170:203" ph="..." />
-                <marker date="1552494271357" expanded="true" signature="533:695" ph="..." />
-                <marker date="1552494271357" expanded="true" signature="533:699" ph="..." />
-              </folding>
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new/application.py">
+        <entry file="file://$PROJECT_DIR$/ddd/painter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="408">
+              <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+                <marker date="1561315008402" expanded="true" signature="61:62" ph="..." />
+                <marker date="1561315008402" expanded="true" signature="61:67" ph="..." />
+                <marker date="1561315008402" expanded="true" signature="222:228" ph="..." />
+                <marker date="1561315008402" expanded="true" signature="701:707" ph="..." />
+                <marker date="1561315008402" expanded="true" signature="3309:3310" ph="..." />
               </folding>
             </state>
           </provider>
@@ -110,7 +112,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>variables</find>
+      <find>Color</find>
+      <find>A</find>
     </findStrings>
+    <replaceStrings>
+      <replace>[&amp;fl!a]/////’[&amp;fl!a]///////’[&amp;fl!a]</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -124,9 +131,17 @@
         <option value="$PROJECT_DIR$/ttt.py" />
         <option value="$PROJECT_DIR$/plant.py" />
         <option value="$PROJECT_DIR$/rules.py" />
+        <option value="$PROJECT_DIR$/testttt.py" />
         <option value="$PROJECT_DIR$/new/rules.py" />
         <option value="$PROJECT_DIR$/new/plant.py" />
         <option value="$PROJECT_DIR$/new/application.py" />
+        <option value="$PROJECT_DIR$/3d/test.py" />
+        <option value="$PROJECT_DIR$/3d/model.py" />
+        <option value="$PROJECT_DIR$/3d/painter.py" />
+        <option value="$PROJECT_DIR$/testtttt" />
+        <option value="$PROJECT_DIR$/ddd/matrix.py" />
+        <option value="$PROJECT_DIR$/ddd/model.py" />
+        <option value="$PROJECT_DIR$/ddd/painter.py" />
       </list>
     </option>
   </component>
@@ -142,6 +157,7 @@
     <option name="width" value="1855" />
     <option name="height" value="1084" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -153,6 +169,11 @@
             <path>
               <item name="Imperfact-plants" type="b2602c69:ProjectViewProjectNode" />
               <item name="Imperfact-plants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Imperfact-plants" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Imperfact-plants" type="462c0819:PsiDirectoryNode" />
+              <item name="ddd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Imperfact-plants" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.application">
+  <component name="RunManager" selected="Python.painter">
     <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,7 +237,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plant (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,12 +245,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/new" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ddd" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new/plant.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ddd/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,7 +259,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rules" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,12 +267,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new/rules.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +281,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="painter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,12 +289,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ddd" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ddd/painter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,7 +303,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ttt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Imperfact-plants" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,12 +311,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ttt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,19 +326,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.ttt" />
-      <item itemvalue="Python.rules" />
-      <item itemvalue="Python.plant (1)" />
       <item itemvalue="Python.application" />
+      <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.model" />
+      <item itemvalue="Python.painter" />
+      <item itemvalue="Python.model (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.painter" />
+        <item itemvalue="Python.model (1)" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.application" />
-        <item itemvalue="Python.plant (1)" />
-        <item itemvalue="Python.rules" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.ttt" />
       </list>
     </recent_temporary>
   </component>
@@ -335,16 +356,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27799228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30281302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32882413" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39854318" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32674298" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39854318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -352,8 +373,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3298647" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3298647" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,29 +388,39 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/testing-assignment-luodeertian" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/new/application.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/new/plant.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/ddd/test.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="tree_paint.branch" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>result + result</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result[1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>tree_paint.branch</expression-string>
         <language-id>Python</language-id>
@@ -426,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1247971764/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -451,44 +475,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
           <caret line="70" column="18" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="18" />
-          <folding>
-            <marker date="1551961280876" expanded="true" signature="226:231" ph="..." />
-            <marker date="1551961280876" expanded="true" signature="254:351" ph="..." />
-            <marker date="1551961280876" expanded="true" signature="1187:1227" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testttt.py" />
+    <entry file="file://$PROJECT_DIR$/ttt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/rules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
-            <marker date="1552491760255" expanded="true" signature="298:419" ph="..." />
-            <marker date="1552491760255" expanded="true" signature="557:704" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/plant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1552494271357" expanded="true" signature="170:203" ph="..." />
-            <marker date="1552494271357" expanded="true" signature="533:695" ph="..." />
-            <marker date="1552494271357" expanded="true" signature="533:699" ph="..." />
+            <marker date="1556198419251" expanded="true" signature="320:441" ph="..." />
+            <marker date="1556198419251" expanded="true" signature="578:725" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="147">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testtttt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="76" lean-forward="true" selection-start-column="76" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/matrix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/plant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1556741544485" expanded="true" signature="405:568" ph="..." />
+            <marker date="1556741544485" expanded="true" signature="405:572" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddd/painter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="114" column="23" lean-forward="true" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <marker date="1561315008402" expanded="true" signature="61:62" ph="..." />
+            <marker date="1561315008402" expanded="true" signature="61:67" ph="..." />
+            <marker date="1561315008402" expanded="true" signature="222:228" ph="..." />
+            <marker date="1561315008402" expanded="true" signature="701:707" ph="..." />
+            <marker date="1561315008402" expanded="true" signature="3309:3310" ph="..." />
           </folding>
         </state>
       </provider>

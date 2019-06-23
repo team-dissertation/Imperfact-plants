@@ -11,21 +11,9 @@ class Point(object):
         self.y = y
 
 
-class Color(object):
-    r = 0
-    g = 0
-    b = 0
+class Branch(object):
 
-
-class Element(object):
-
-    def next_generation(self, available):
-        pass
-
-
-class Branch(Element):
-
-    color = Color()
+    color = Color(0, 0, 0)
 
     def __init__(self, angle, start_point, end_point):
         self.length = 10
@@ -41,12 +29,14 @@ class Paint(object):
     branch = []
     save_point = []
     save_angle = []
-    start_point = Point(350, 950)
+    #start_point = Point(150, 250)
     save = False
     length = 10
 
-    def __init__(self, tree):
+    def __init__(self, tree, temp_point):
         self.tree = tree
+        self.start_point = temp_point
+        self.temp_point = temp_point
 
     def next_generation(self):
         if self.tree_string is None or self.tree_string is '':
@@ -60,7 +50,7 @@ class Paint(object):
             else:
                 temp_string += item
         self.tree_string = temp_string
-        self.start_point = Point(350, 950)
+        self.start_point = self.temp_point
         self.angle = 270
         print(self.tree_string)
         self.make()
@@ -73,7 +63,7 @@ class Paint(object):
             if item == '+':
                 self.angle += self.tree.angle
 
-            if item == 'F' or item == 'A' or item == 'B' or item == 'G':
+            if item == 'F' or item == 'A' or item == 'B' or item == 'G' or item == 'X':
                 self.angle = self.angle % 360
                 start_point = self.start_point
                 end_x = start_point.x + self.length * math.cos(math.pi * (self.angle / 180))
