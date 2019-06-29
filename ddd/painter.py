@@ -34,22 +34,27 @@ class Painter(object):
         save_vector = []
         branch_list = []
 
+        a = 0
         for item in tree_string:
-            if item == 'F':
+
+            print(item)
+            if item == 'F' or item == 'A' or item == 'B' or item == 'C':
                 end_point = start_point + vector
                 branch = Branch(start_point, end_point)
                 branch_list.append(branch)
                 start_point = end_point
+                a = a + 1
             elif item == 'f':
                 start_point = start_point + vector
-            elif item == 'A':
-                pass
             elif item == 'S':
                 pass
             elif item == 'L':
                 pass
-            elif item == '/':
+            elif item == '>':
                 r_matrix = get_matrix('H', -angle)
+                vector = numpy.dot(vector, r_matrix)
+            elif item == '<':
+                r_matrix = get_matrix('H', angle)
                 vector = numpy.dot(vector, r_matrix)
             elif item == '+':
                 r_matrix = get_matrix('U', angle)
@@ -73,39 +78,38 @@ class Painter(object):
                 start_point = save_point.pop()
                 vector = save_vector.pop()
             else:
-                pass
+                print('empty')
+            print(vector)
         return branch_list
 
-
+#ulh
 def get_matrix(m_type, x):
-    if m_type is 'U':
-        RU = numpy.array(
+    t = ''
+    if m_type is 'H':
+        t = numpy.array(
             [
                 [math.cos(x), math.sin(x), 0],
                 [-math.sin(x), math.cos(x), 0],
                 [0, 0, 1]
             ]
         )
-        return RU
     elif m_type is 'L':
-        RL = numpy.array(
+        t = numpy.array(
             [
                 [math.cos(x), 0, -math.sin(x)],
                 [0, 1, 0],
                 [math.sin(x), 0, math.cos(x)]
             ]
         )
-        return RL
-    elif m_type is 'H':
-        RH = numpy.array(
+    elif m_type is 'U':
+        t = numpy.array(
             [
                 [1, 0, 0],
                 [0, math.cos(x), -math.sin(x)],
                 [0, math.sin(x), math.cos(x)]
             ]
         )
-        return RH
     else:
         raise RuntimeError('matrix type error')
-
+    return t
 

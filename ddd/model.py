@@ -34,3 +34,14 @@ class BushLike(object):
         'S': 'FL',
         'L': '[%%%∧∧{-f+f+f-|-f+f+f}]'
     }
+
+
+class BaTree(object):
+    axiom = 'BBBBBA'
+    angle = 18.5 * math.pi / 180
+    variables = ['A', 'B', 'C']
+    rules = {
+        'A': '[++BB[--C][++C][&&C][^^C]A]>>>>>+BBB[--C][++C][&&C][^^C]A',
+        'B': '$$B',
+        'C': ''
+    }
