@@ -29,19 +29,28 @@ class BushLike(object):
     angle = 22.5 * math.pi / 180
     variables = ['A', 'F', 'S', 'L']
     rules = {
-        'A': '[&FL!A]/////%[&FL!A]///////%[&FL!A]',
-        'F': 'S/////F',
+        'A': '[&FL!A]>>>>>%[&FL!A]>>>>>>>%[&FL!A]',
+        'F': 'S>>>>>F',
         'S': 'FL',
-        'L': '[%%%∧∧{-f+f+f-|-f+f+f}]'
+        'L': '[<<<∧∧{-f+f+f-|-f+f+f}]'
     }
 
 
 class BaTree(object):
     axiom = 'BBBBBA'
-    angle = 18.5 * math.pi / 180
+    angle = 18 * math.pi / 180
     variables = ['A', 'B', 'C']
     rules = {
         'A': '[++BB[--C][++C][&&C][^^C]A]>>>>>+BBB[--C][++C][&&C][^^C]A',
         'B': '$$B',
         'C': ''
+    }
+
+
+class Vine(object):
+    axiom = '--A'
+    angle = 18 * math.pi / 180
+    variables = ['A']
+    rules = {
+        'A': '<A[++A]->A[--A]+<<A',
     }

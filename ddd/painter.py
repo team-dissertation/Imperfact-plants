@@ -33,17 +33,21 @@ class Painter(object):
         save_point = []
         save_vector = []
         branch_list = []
+        current_father = ''
+        save_upper_nodes = []
 
-        a = 0
         for item in tree_string:
 
-            print(item)
             if item == 'F' or item == 'A' or item == 'B' or item == 'C':
                 end_point = start_point + vector
                 branch = Branch(start_point, end_point)
+
+                if current_father is not '':
+                    branch.father = current_father
+                current_father = branch
+
                 branch_list.append(branch)
                 start_point = end_point
-                a = a + 1
             elif item == 'f':
                 start_point = start_point + vector
             elif item == 'S':
@@ -74,13 +78,16 @@ class Painter(object):
             elif item == '[':
                 save_point.append(start_point)
                 save_vector.append(vector)
+                if current_father is not '':
+                    save_upper_nodes.append(current_father)
             elif item == ']':
                 start_point = save_point.pop()
                 vector = save_vector.pop()
+                current_father = save_upper_nodes.pop()
             else:
-                print('empty')
-            print(vector)
+                pass
         return branch_list
+
 
 #ulh
 def get_matrix(m_type, x):

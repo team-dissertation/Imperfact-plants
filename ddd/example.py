@@ -8,12 +8,15 @@ from ddd.painter import *
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-tree = BaTree()
+tree = Vine()
 paint = Painter(tree)
 paint.next_generation()
-paint.next_generation()
-paint.next_generation()
-paint.next_generation()
+#paint.next_generation()
+#paint.next_generation()
+#paint.next_generation()
+#paint.next_generation()
+#paint.next_generation()
+#paint.next_generation()
 branches = paint.build_tree_set()
 
 fig = plt.figure()
@@ -22,9 +25,8 @@ ax = fig.add_subplot(1, 1, 1, projection='3d')
 
 ax.set_xlim(-100, 100)
 ax.set_ylim(-100, 100)
-ax.set_zlim(0, 100)
+ax.set_zlim(0, 200)
 
-print(branches)
 for branch in branches:
     start = branch.start_point
     end = branch.end_point
