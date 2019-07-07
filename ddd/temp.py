@@ -92,3 +92,8 @@ def irotZ(self, angle):
     print
     self.heading.toString()
 '''
+
+a = ['a']
+b = ['c', 'd']
+a.extend(b)
+print(a)
