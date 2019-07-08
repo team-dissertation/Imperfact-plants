@@ -11,7 +11,7 @@ from mpl_toolkits.mplot3d import Axes3D
 tree = Vine()
 paint = Painter(tree)
 paint.next_generation()
-#paint.next_generation()
+paint.next_generation()
 #paint.next_generation()
 #paint.next_generation()
 #paint.next_generation()

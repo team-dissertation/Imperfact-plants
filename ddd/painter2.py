@@ -6,12 +6,14 @@ class Painter(object):
     start_point = numpy.array([0, 0, 0])
     base_vector = numpy.array([0, 0, 10])
     tree_string = ''
+    n = 0
 
     def __init__(self, tree):
         self.tree = tree
 
     def build_tree_set(self):
-
+        self.n = self.n + 1
+        n = self.n
         last_string = self.tree_string
         if last_string is '':
             last_string = self.tree.axiom
@@ -24,9 +26,7 @@ class Painter(object):
         save_vector = []
         branch_list = []
         new_string = ''
-
         for item in last_string:
-
             if item == 'F' or item == 'A' or item == 'B' or item == 'C':
                 [rule_drawable, rule_start_point, rule_vector, rule_angle, rule_tree_string,
                  rule_branch_list] = self.check_rules(item, rules, start_point, vector, angle)
@@ -65,13 +65,13 @@ class Painter(object):
                 vector = save_vector.pop()
             else:
                 pass
-        if item != 'F' and item != 'A' and item != 'B' and item != 'C':
-            new_string = new_string + item
+            if item != 'F' and item != 'A' and item != 'B' and item != 'C':
+                new_string = new_string + item
         self.tree_string = new_string
         return branch_list
 
-    @staticmethod
-    def check_rules(item, rules, start_point, vector, angle):
+    def check_rules(self, item, rules, start_point, vec, angle):
+        vector = vec
         save_point = []
         save_vector = []
         branch_list = []
@@ -89,36 +89,37 @@ class Painter(object):
                     # -------------------------------------------------------------
                     # here is the point that check whether the branch valid or not
                     # -------------------------------------------------------------
+                    branch.valid = test(branch)
                     if not branch.valid:
                         tree_string == ''
                         break
                     branch_list.append(branch)
                     start_point = end_point
-                elif item == '>':
+                elif key == '>':
                     r_matrix = get_matrix('H', -angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '<':
+                elif key == '<':
                     r_matrix = get_matrix('H', angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '+':
+                elif key == '+':
                     r_matrix = get_matrix('U', angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '-':
+                elif key == '-':
                     r_matrix = get_matrix('U', -angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '&':
+                elif key == '&':
                     r_matrix = get_matrix('L', angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '∧':
+                elif key == '∧':
                     r_matrix = get_matrix('L', -angle)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '|':
+                elif key == '|':
                     r_matrix = get_matrix('U', math.pi)
                     vector = numpy.dot(vector, r_matrix)
-                elif item == '[':
+                elif key == '[':
                     save_point.append(start_point)
                     save_vector.append(vector)
-                elif item == ']':
+                elif key == ']':
                     start_point = save_point.pop()
                     vector = save_vector.pop()
                 else:
@@ -167,3 +168,9 @@ def get_rule_list(rules, key_word):
         if key == key_word:
             rule_list.append(rule)
     return rule_list
+
+
+def test(branch):
+    if branch.start_point[0] > 25:
+        return False
+    return True
