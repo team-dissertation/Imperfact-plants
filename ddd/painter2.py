@@ -29,7 +29,7 @@ class Painter(object):
 
             if item == 'F' or item == 'A' or item == 'B' or item == 'C':
                 [rule_drawable, rule_start_point, rule_vector, rule_angle, rule_tree_string,
-                 rule_branch_list] = self.check_rules(item, rules, start_point, vector)
+                 rule_branch_list] = self.check_rules(item, rules, start_point, vector, angle)
                 if rule_drawable:
                     start_point = rule_start_point
                     vector = rule_vector
