@@ -28,8 +28,10 @@ class Painter(object):
         new_string = ''
         for item in last_string:
             if item == 'F' or item == 'A' or item == 'B' or item == 'C':
+
                 [rule_drawable, rule_start_point, rule_vector, rule_angle, rule_tree_string,
                  rule_branch_list] = self.check_rules(item, rules, start_point, vector, angle)
+
                 if rule_drawable:
                     start_point = rule_start_point
                     vector = rule_vector
@@ -87,7 +89,7 @@ class Painter(object):
                     end_point = start_point + vector
                     branch = Branch(start_point, end_point, item)
                     # -------------------------------------------------------------
-                    # here is the point that check whether the branch valid or not
+                    # here is the space that check whether the branch valid or not
                     # -------------------------------------------------------------
                     branch.valid = test(branch)
                     if not branch.valid:
@@ -171,6 +173,6 @@ def get_rule_list(rules, key_word):
 
 
 def test(branch):
-    if branch.start_point[0] > 25:
+    if branch.end_point[0] > 25:
         return False
     return True
