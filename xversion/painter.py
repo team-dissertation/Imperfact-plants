@@ -16,7 +16,7 @@ class Painter(object):
         self.tree = tree
         self.tree_string = tree.axiom
 
-    # Every time this function called, tree string will changed by new generation string
+    # Every time this function called, the tree string will be renew
     def build_tree(self):
         rules = self.tree.rules
         variables = self.tree.variables
@@ -29,9 +29,11 @@ class Painter(object):
                 temp_string = temp_string + item
                 continue
             item_rules = get_rule_list(rules, item)
-            rule = self.check_rules(item_rules, tree_string[index + 1:], temp_string, item)
+            rule = self.check_rules(item_rules, tree_string[index + 1:], temp_string, key=item)
             temp_string = temp_string + rule
         self.tree_string = temp_string
+        branch_list = self.string_to_branch(temp_string)
+        return branch_list
 
     def check_rules(self, item_rules, rest_string, front_string, key):
 
@@ -59,7 +61,7 @@ class Painter(object):
         for item in string:
             if item == 'F' or item == 'A' or item == 'B' or item == 'C':
                 end_point = start_point + vector
-                branch = Branch(start_point, end_point)
+                branch = Branch(start_point, end_point, item)
                 branch_list.append(branch)
                 start_point = end_point
             elif item == '>':
