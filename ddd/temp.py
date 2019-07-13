@@ -93,7 +93,15 @@ def irotZ(self, angle):
     self.heading.toString()
 '''
 
-a = ['a']
-b = ['c', 'd']
-a.extend(b)
+def test():
+    for i in range(5):
+        if i == 3:
+            return i
+        print(i)
+    return 'c'
+
+
+
+a = test()
+
 print(a)
